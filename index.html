@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="tabelaDiv">
+      <h2>IT Bootcamp Rapid & Blitz Chess Tournament</h2>
+      <hr />
+      <h4>Confirmed Participants:</h4>
+      <table class="table">
+        <tr>
+          <th>Player's Name</th>
+          <th>Player's Federation</th>
+          <th>Player's Rating</th>
+        </tr>
+        <tr>
+          <td>Magnus Carlsen</td>
+          <td>Norway</td>
+          <td>2840</td>
+        </tr>
+        <tr>
+          <td>Anish Giri</td>
+          <td>The Netherlands</td>
+          <td>2790</td>
+        </tr>
+        <tr>
+          <td>Ding Liren</td>
+          <td>China</td>
+          <td>2780</td>
+        </tr>
+        <tr>
+          <td>Richard Rapport</td>
+          <td>Hungary</td>
+          <td>2756</td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <hr />
+    <div class="addPlayer">
+      <h3>Add a New Player</h3>
+      <form class="newPlayer">
+        <label for="name">Player's Name</label>
+        <br />
+        <input type="text" id="name" name="name" />
+        <br />
+        <br />
+        <label for="federation">Player's Federation</label>
+        <br />
+        <input type="text" id="federation" name="federation" />
+        <br />
+        <br />
+        <label for="playerRating">Player`s Rating</label>
+        <br />
+        <input type="number" id="playerRating" name="name" />
+        <br />
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <hr />
+    <div class="calculation">
+      <h2>Calculation</h2>
+      <div class="calcForm hidden">
+        <label for="a">A</label>
+        <input type="number" id="a" name="a" />
+        <br />
+        <br />
+        <label for="b">B</label>
+        <input type="number" id="b" name="b" />
+        <br />
+        <br />
+        <button type="button" id="btn">Calculate</button>
+        <br />
+        <p id="result"></p>
+        <br />
+      </div>
+      <div class="checker">
+        <p>Check the box below to toggle the calculator on and off.</p>
+        <input type="checkbox" id="checker" />
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
